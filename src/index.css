@@ -7,12 +7,13 @@ body{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
 }
 .title{
     width: 50%;
 }
 h1{
+    font-size: 25px;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -35,7 +36,7 @@ h2{
     display: block;
     background-color: #272727;
     color: rgb(255, 255, 255);
-    float: right;
+    float:right;
 }
 #input:focus{
     outline: none;
@@ -51,7 +52,7 @@ h2{
     margin-left:auto;
     border-collapse:collapse;
     table-layout: fixed;
-    width: 70%;
+    width: 100%;
     display: block;
     overflow-x: auto;
 }
@@ -77,6 +78,9 @@ h2{
     padding-top: 20px;
     padding-bottom: 20px;
     width:120px;
+}
+.symbol{
+    width:1500px;
 }
 .coinRank{
     width:50px;
