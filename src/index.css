@@ -36,7 +36,7 @@ h2{
     display: block;
     background-color: #272727;
     color: rgb(255, 255, 255);
-    float:right;
+    float: right;
 }
 #input:focus{
     outline: none;
@@ -60,7 +60,7 @@ h2{
     background-color:#272727;
     border-top:1px solid rgb(126, 126, 126);
     border-bottom:1px solid rgb(126, 126, 126);
-    position:sticky;
+    position: sticky;
     top:0;
 }
 .row{
@@ -111,5 +111,5 @@ h2{
 .num{
     font-size: 15px;
     text-align: right;
-    width: 400px;
+    width: 600px;
 }
