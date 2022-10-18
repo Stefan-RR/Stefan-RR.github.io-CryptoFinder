@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    font-family: 'Roboto', sans-serif;;
+}
+.top{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.title{
+    width: 50%;
+}
+h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h2{
+    font-size: 15px;
+    font-weight:lighter;
+    color:#d4d1d1;
+    margin-top: 0;
+}
+#search-container{
+    width: 50%;
+    overflow:hidden;
+}
+#input{
+    height: 40px;
+    width: 50%;
+    border:1px solid rgb(126, 126, 126);
+    border-radius: 15px;
+    font-size: 25px;
+    display: block;
+    background-color: #272727;
+    color: rgb(255, 255, 255);
+    float: right;
+}
+#input:focus{
+    outline: none;
+}
+::placeholder{
+    color: rgb(170, 169, 169);
+}
+:hover::placeholder{
+    color:white
+}
+#table{
+    margin-right:auto;
+    margin-left:auto;
+    border-collapse:collapse;
+    table-layout: fixed;
+    width: 70%;
+    display: block;
+    overflow-x: auto;
+}
+.header{
+    background-color:#272727;
+    border-top:1px solid rgb(126, 126, 126);
+    border-bottom:1px solid rgb(126, 126, 126);
+    position:sticky;
+    top:0;
+}
+.row{
+    border-bottom:1px solid rgb(126, 126, 126);
+}
+.imageContent{
+    height:25px;
+    width:25px;
+}
+.image{
+    max-width: 25px;
+}
+.name{
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:120px;
+}
+.coinRank{
+    width:50px;
+    text-align:left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+.coinSymbol{
+    width:110px;
+}
+.coinName{
+    min-width:20px;
+    width: 30px;
+    text-align:left;
+}
+.number{
+    text-align: right;
+}
+.coinMarketCap{
+    padding-right: 5px;
+}
+.symbol{
+    color:#9e9a9a;
+    font-size: 13px;
+    font-weight: bold;
+}
+.num{
+    font-size: 15px;
+    text-align: right;
+    width: 400px;
+}

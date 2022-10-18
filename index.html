@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Market Cap Finder</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div class= "top">
+                <div class="title">
+                    <h1>Top 100 Cryptocurrencies by Market Cap</h1>
+                    <h2>Powered by CoinGecko API</h2>
+                </div>
+             <div id="search-container">
+                 <input id="input" type="text" placeholder="Search" onkeyup="findCrypto()">
+            </div> 
+        </div>
+        <div id="table-container">
+            <table id="table">
+                <tr class="header">
+                    <th class="coinRank">#</th>
+                    <th class="coinName">Coin</th>
+                    <th class="coinSymbol"></th>
+                    <th class="coinSpace"></th>
+                    <th class="coinPrice number">Price</th>
+                    <th class="coinPercent number">24h %</th>
+                    <th class="coinVolume number">Volume</th>
+                    <th class="coinMarketCap number">Market Cap</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
