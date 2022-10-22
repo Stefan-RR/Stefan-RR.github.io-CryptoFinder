@@ -13,7 +13,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             const name = document.getElementById(data[i].name).appendChild(document.createElement('td'))
             name.setAttribute("class", "name");
             const symbol = document.getElementById(data[i].name).appendChild(document.createElement('td'))
-            symbol.setAttribute("class", "symbol"); 
+            symbol.setAttribute("class", "space"); 
             const price = document.getElementById(data[i].name).appendChild(document.createElement('td'))
             price.setAttribute("class", "num");
             const priceChange = document.getElementById(data[i].name).appendChild(document.createElement('td'))
@@ -24,8 +24,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             marketCap.setAttribute("class", "num");
             rank.innerText = data[i].market_cap_rank;
             image.innerHTML = imageContent;
-            name.innerText = data[i].name;
-            symbol.innerText = data[i].symbol.toUpperCase();
+            name.innerHTML = data[i].name + "<span class='symbol'>" + data[i].symbol.toUpperCase() +"</span>";
             price.innerText = '$' + data[i].current_price;
             priceChange.innerText = data[i].price_change_percentage_24h.toFixed(2) + '%'; 
             volume.innerText = '$' + data [i].total_volume.toLocaleString('en-US');
