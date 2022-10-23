@@ -20,7 +20,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             const marketCap = document.getElementById(data[i].name).appendChild(document.createElement('td')) 
             marketCap.setAttribute("class", "num");
             // Insert api data into appropriate td
-            rank.innerHTML = "<span class='rank'>" + data[i].market_cap_rank + "</span>" + "<span class='image'>" + imageContent + "</span>" +"<span class='search'>" + "<span class='name'>" + data[i].name + "</span>" + "<span class='symbol'>" + data[i].symbol.toUpperCase() +"</span>" + "</span>";
+            rank.innerHTML = "<div class='coinDiv'>" + "<div class='rankDiv'>" + "<span class='rank'>" + data[i].market_cap_rank + "</span>" + "</div>" + "<div class='imageDiv'>" + "<span class='image'>" + imageContent + "</span>" + "</div>" + "<div class='searchDiv'>" + "<a class='search'>" + "<span class='name'>" + data[i].name + "</span>" + "<span class='symbol'>" + data[i].symbol.toUpperCase() +"</span>" + "</a>" + "</div>" + "</div>";
             price.innerText = '$' + data[i].current_price;
             priceChange.innerText = data[i].price_change_percentage_24h.toFixed(2) + '%'; 
             volume.innerText = '$' + data [i].total_volume.toLocaleString('en-US');
