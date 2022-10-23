@@ -109,6 +109,7 @@ h2{
     -webkit-appearance: none;
     -moz-appearance: none;
     position: sticky;
+    position: -webkit-sticky;
     z-index: 4;
     left: 0;
     overflow: hidden;
@@ -148,7 +149,7 @@ h2{
 }
 .searchDiv{
     display: block;
-    flex: auto;
+    flex: 1 1 auto;
 }
 .search{
    align-items: flex-start;
