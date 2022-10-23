@@ -1,5 +1,7 @@
 body{
     background-color: rgb(19, 19, 19);
+    -webkit-appearance: none;
+    -moz-appearance: none;
     color: white;
     font-family: 'Roboto', sans-serif;;
 } 
@@ -62,6 +64,8 @@ h2{
 }
 .header{
     background-color:#272727;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     border-top: 1px solid rgb(126, 126, 126);
     border-bottom: 1px solid rgb(126, 126, 126);
     position: sticky;
@@ -70,6 +74,8 @@ h2{
 }
 .coinInfo{
     background-color:#272727;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     position: sticky;
     z-index: 7;
     left: 0;
@@ -100,6 +106,8 @@ h2{
     display: block;
     min-width: 100px;
     background-color: rgb(19, 19, 19);
+    -webkit-appearance: none;
+    -moz-appearance: none;
     position: sticky;
     z-index: 4;
     left: 0;
