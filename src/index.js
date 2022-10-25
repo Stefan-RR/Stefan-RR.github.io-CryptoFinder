@@ -8,7 +8,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             const tableRow = document.getElementById("table").appendChild(document.createElement('tr'))
             tableRow.setAttribute("id", data[i].name);
             tableRow.setAttribute("class", "row");
-            const rank = document.getElementById(data[i].name).appendChild(document.createElement('td'))
+            const rank = document.getElementById(data[i].name).appendChild(document.createElement('th'))
             rank.setAttribute("class", "coin");
             const imageContent = '<img src='+ data[i].image +' class="imageContent"/>'
             const price = document.getElementById(data[i].name).appendChild(document.createElement('td'))
