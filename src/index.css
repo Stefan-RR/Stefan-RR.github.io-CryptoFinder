@@ -112,7 +112,6 @@ h2{
     position: -webkit-sticky;
     z-index: 4;
     left: 0;
-    overflow: hidden;
     padding-top: 17px;
     padding-bottom: 17px;
 }
