@@ -97,6 +97,7 @@ h2{
 }
 .row{
     border-bottom: 1px solid rgb(126, 126, 126);
+    overflow: hidden;
 }
 .coinDiv{
     display: flex;
