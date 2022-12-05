@@ -104,7 +104,8 @@ h2{
     min-width: 230px;
 }
 .coin{
-    display: block;
+    display: flex;
+    flex-direction: row;
     min-width: 100px;
     background-color: rgb(19, 19, 19);
     -webkit-appearance: none;
@@ -113,11 +114,12 @@ h2{
     position: -webkit-sticky;
     z-index: 4;
     left: 0px;
+    text-align: left;
     padding-top: 17px;
     padding-bottom: 17px;
 }
 .rankDiv{
-    display: flex;
+    display: inline;
 }
 .rank{
     align-self:center;
@@ -126,7 +128,7 @@ h2{
     padding-right: 20px;
 }
 .imageDiv{
-    display: block;
+    display: inline;
 }
 .imageContent{
     height: 20px;
@@ -148,7 +150,7 @@ h2{
     vertical-align: middle;
 }
 .searchDiv{
-    display: block;
+    display: inline;
     flex: 1 1 auto;
 }
 .search{
