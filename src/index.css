@@ -62,6 +62,9 @@ h2{
 #table::-webkit-scrollbar{
     display: none;
 }
+tr {
+    height: auto;
+}
 .header{
     background-color:#272727;
     -webkit-appearance: none;
