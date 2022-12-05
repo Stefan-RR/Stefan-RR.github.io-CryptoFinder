@@ -113,7 +113,8 @@ h2{
     position: sticky;
     position: -webkit-sticky;
     z-index: 4;
-    left: 0px;
+    left: 0;
+    top: 0;
     text-align: left;
     padding-top: 17px;
     padding-bottom: 17px;
