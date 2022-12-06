@@ -1,35 +1,35 @@
-body{
+body {
     background-color: rgb(19, 19, 19);
     -webkit-appearance: none;
     -moz-appearance: none;
     color: white;
     font-family: 'Roboto', sans-serif;;
 } 
-.top{
+.top {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-.title{
+.title {
     width: 50%;
 }
-h1{
+h1 {
     font-size: 25px;
     margin-bottom: 0;
     margin-top: 0;
 }
-h2{
+h2 {
     font-size: 15px;
     font-weight: lighter;
     color:#d4d1d1;
     margin-top: 0;
 }
-#search-container{
+#search-container {
     width: 50%;
     overflow: hidden;
 }
-#input{
+#input {
     height: 40px;
     width: 50%;
     border:1px solid rgb(126, 126, 126);
@@ -40,16 +40,16 @@ h2{
     color: rgb(255, 255, 255);
     float: right;
 }
-#input:focus{
+#input:focus {
     outline: none;
 }
-::placeholder{
+::placeholder {
     color: rgb(170, 169, 169);
 }
-:hover::placeholder{
+:hover::placeholder {
     color:white
 }
-#table{
+#table {
     margin-right: auto;
     margin-left: auto;
     border-collapse: collapse;
@@ -59,13 +59,13 @@ h2{
     display: block;
     overflow-x: auto;
 }
-#table::-webkit-scrollbar{
+#table::-webkit-scrollbar {
     display: none;
 }
 tr {
     height: auto;
 }
-.header{
+.header {
     background-color:#272727;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -75,7 +75,7 @@ tr {
     top: 0;
     z-index: 5;
 }
-.coinInfo{
+.coinInfo {
     background-color:#272727;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -88,24 +88,27 @@ tr {
     padding-bottom: 10px;
     padding-left: 5px;
 }
-.coinRank{
+.coinRank {
     padding-right: 17px
 }
-.number{
+.number {
     text-align: right;
     z-index: 6;
 }
-.coinMarketCap{
+.coinMarketCap {
     padding-right: 5px;
 }
-.row{
+.row {
+    height: 58px;
+    max-height: 58px;
     border-bottom: 1px solid rgb(126, 126, 126);
+    overflow: hidden;
 }
-.coinDiv{
+.coinDiv {
     display: flex;
     min-width: 230px;
 }
-.coin{
+.coin {
     display: flex;
     flex-direction: row;
     min-width: 100px;
@@ -121,47 +124,47 @@ tr {
     padding-top: 17px;
     padding-bottom: 17px;
 }
-.rankDiv{
+.rankDiv {
     display: inline;
 }
-.rank{
+.rank {
     align-self:center;
     font-size: 15px;
     padding-left: 4px;
     padding-right: 20px;
 }
-.imageDiv{
+.imageDiv {
     display: inline;
 }
-.imageContent{
+.imageContent {
     height: 20px;
     width: 20px;
     padding-right: 5px;
     vertical-align: middle;
 }
-.name{
+.name {
     font-weight: bolder;
     font-size: 15px;
     vertical-align: top;
 
 }
-.symbol{
+.symbol {
     color:#9e9a9a;
     font-size: 11px;
     font-weight: bold;
     padding-left: 10px;
     vertical-align: middle;
 }
-.searchDiv{
+.searchDiv {
     display: inline;
     flex: 1 1 auto;
 }
-.search{
+.search {
    align-items: flex-start;
    flex-direction: column;
    vertical-align: sub;
 }
-.num{
+.num {
     z-index: 1;
     font-size: 14px;
     text-align: right;
