@@ -171,3 +171,16 @@ tr {
     width: 600px;
     padding-left: 20px;
 }
+.pnum {
+    z-index: 1;
+    font-size: 14px;
+    text-align: right;
+    width: 600px;
+    padding-left: 20px;
+}
+.positive {
+    color: green
+}
+.negative { 
+    color: red
+}

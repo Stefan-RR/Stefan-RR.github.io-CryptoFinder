@@ -14,7 +14,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             const price = document.getElementById(data[i].name).appendChild(document.createElement('td'))
             price.setAttribute("class", "num");
             const priceChange = document.getElementById(data[i].name).appendChild(document.createElement('td'))
-            priceChange.setAttribute("class", "num");
+            priceChange.setAttribute("class", "pnum");
             const volume = document.getElementById(data[i].name).appendChild(document.createElement('td'))
             volume.setAttribute("class", "num");
             const marketCap = document.getElementById(data[i].name).appendChild(document.createElement('td')) 
@@ -25,10 +25,28 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             priceChange.innerText = data[i].price_change_percentage_24h.toFixed(2) + '%'; 
             volume.innerText = '$' + data [i].total_volume.toLocaleString('en-US');
             marketCap.innerText = '$' + data [i].market_cap.toLocaleString('en-US');
+            
             }
         }
     )
+     
+    function textColor(){
+        const table = document.getElementById("table");
+        const tr = table.getElementsByTagName("tr");
 
+        for(i = 0; i < tr.length; i++){
+            const priceChange = tr[i].getElementsByClassName("pnum")[0];
+            if (priceChange) {
+                const txtValue = priceChange.textContent;
+                if((txtValue) >=0){
+                    txtValue[i].style.color = "green"
+                } else {
+                    txtValue[i].style.color = "red"
+                }
+            }
+        }
+    }  
+    textColor()
     function findCrypto(){
         const input = document.getElementById("input");
         const filter = input.value.toUpperCase();
