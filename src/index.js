@@ -27,7 +27,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             priceChange.innerHTML = pChange.toFixed(2) + '%'; 
             volume.innerText = '$' + data [i].total_volume.toLocaleString('en-US');
             marketCap.innerText = '$' + data [i].market_cap.toLocaleString('en-US');
-            priceChange.style.color = (pChange >= 0 ? 'green':'red')
+            priceChange.style.color = (pChange >= 0 ? '#ADFF2F':'#FA8072')
             }
         }
     )
