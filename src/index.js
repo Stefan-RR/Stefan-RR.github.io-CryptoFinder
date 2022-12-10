@@ -8,7 +8,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             const tableRow = document.getElementById("table").appendChild(document.createElement('tr'))
             tableRow.setAttribute("id", data[i].name);
             tableRow.setAttribute("class", "row");
-            const rank = document.getElementById(data[i].name).appendChild(document.createElement('th'))
+            const rank = document.getElementById(data[i].name).appendChild(document.createElement('td'))
             rank.setAttribute("class", "coin");
             const imageContent = '<img src='+ data[i].image +' class="imageContent"/>'
             const price = document.getElementById(data[i].name).appendChild(document.createElement('td'))
@@ -27,6 +27,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             priceChange.innerHTML = pChange.toFixed(2) + '%'; 
             volume.innerText = '$' + data [i].total_volume.toLocaleString('en-US');
             marketCap.innerText = '$' + data [i].market_cap.toLocaleString('en-US');
+            // Change colour of % gain based on positive or negative value
             priceChange.style.color = (pChange >= 0 ? '#ADFF2F':'#FA8072')
             }
         }
@@ -53,3 +54,39 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
             }
         }
     }
+
+    function sortTable(th) {
+        // Get the table element that contains the th element
+        const table = th.closest('table');
+      
+        // Get the index of the th element within the table header row
+        const headerIndex = Array.from(th.parentNode.children).indexOf(th);
+      
+        // Get all of the tr elements in the table body
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+      
+        // Sort the rows in ascending order if the th element is not currently sorted,
+        // or in descending order if the th element is currently sorted in ascending order
+        const sortAscending = th.getAttribute('aria-sort') !== 'ascending';
+        rows.sort((row1, row2) => {
+          const cell1 = row1.children[headerIndex];
+          const cell2 = row2.children[headerIndex];
+          return sortAscending
+            ? cell1.innerText.localeCompare(cell2.innerText)
+            : cell2.innerText.localeCompare(cell1.innerText);
+        });
+      
+        // Clear the existing rows from the table body
+        const tbody = table.querySelector('tbody');
+        tbody.innerHTML = '';
+      
+        // Add the sorted rows back to the table body
+        rows.forEach(row => tbody.appendChild(row));
+      
+        // Update the aria-sort attribute on the th element
+        th.setAttribute('aria-sort', sortAscending ? 'ascending' : 'descending');
+      }
+      
+      const thElements = document.querySelectorAll('th');
+      thElements.forEach(th => th.addEventListener('click', () => sortTable(th)));
+      
