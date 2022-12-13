@@ -30,15 +30,16 @@ h2 {
     overflow: hidden;
 }
 #input {
-    height: 40px;
+    height: 35px;
     width: 50%;
     border:1px solid rgb(126, 126, 126);
-    border-radius: 15px;
-    font-size: 25px;
+    border-radius: 8px;
+    font-size: 18px;
     display: block;
     background-color: #272727;
     color: rgb(255, 255, 255);
     float: right;
+    padding-left: 10px;
 }
 #input:focus {
     outline: none;
