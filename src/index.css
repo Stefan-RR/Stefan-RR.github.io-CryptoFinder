@@ -105,6 +105,9 @@ tr {
     border-bottom: 1px solid rgb(126, 126, 126);
     overflow: hidden;
 }
+.row:hover{
+    background-color: rgb(65, 64, 64);
+}
 .coinDiv {
     display: flex;
     min-width: 230px;
@@ -124,6 +127,9 @@ tr {
     text-align: left;
     padding-top: 17px;
     padding-bottom: 17px;
+}
+.coin:hover{
+    background-color: rgb(65, 64, 64);
 }
 .rankDiv {
     display: inline;
