@@ -58,7 +58,7 @@ h2 {
     width: 100%;
     height: 100vh;
     display: block;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 #table::-webkit-scrollbar {
     display: none;
@@ -190,5 +190,6 @@ tr {
         padding-right: 0;
         padding-left: 0;
         width: 100%; 
+        overflow-x: auto;
     }
 }
